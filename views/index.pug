@@ -2,11 +2,14 @@ extends layout
 
 block content
   h1= title
- 
-  a(href="/new") Add New Message
+  div(class="buttonDiv")
+    a(href="/new") Add New Message
 
 block list
+  div(class="messageFlex")
    each val, key in messages
-    p= 'date' + ': ' + val.added
-    p= 'text' + ': ' + val.text
-    p= 'user' + ': ' + val.user
+      div(class="messagePad")
+        div(class="messageContainer")
+          p(class="message")= 'date' + ': ' + val.added
+          p(class="message")= 'text' + ': ' + val.text
+          p(class="message")= 'user' + ': ' + val.user

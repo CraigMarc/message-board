@@ -1,8 +1,48 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
 }
 
 a {
-  color: #00B7FF;
+  color: black;
+  text-decoration: none;
+}
+/*
+.messageFlex {
+ display: flex;
+ 
+
+  
+}*/
+
+.messageContainer {
+  border: solid;
+  width: 80%;
+  border-width: 0.1px;
+  padding-left: 10px;
+}
+
+.message {
+  color: blue;
+}
+
+.messagePad {
+  padding-top: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.buttonDiv {
+  border: solid;
+  border-width: 0.1px;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: lightgrey;
 }
