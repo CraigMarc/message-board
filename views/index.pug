@@ -5,6 +5,9 @@ block content
   p Welcome to #{title}
 
 
+  a(href="/new") Add New Message
+
+block list
    each val, key in messages
     p= 'date' + ': ' + val.added
     p= 'text' + ': ' + val.text
